@@ -35,7 +35,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            docker image pull dylandlopez/isa-abri26-docker:flaskapp
+            docker image pull dylandlopez/isa-abri26-dockerr:flaskapp
             docker container stop contflaskDyland
             docker container rm contflaskDyland
-            docker container run -d --name contflaskpachekexx -p 5001:5000 dylandlopez/isa-abri26-docker:flaskapp
+            docker container run -d --name contflaskDyland -p 5001:5000 dylandlopez/isa-abri26-dockerr:flaskapp
